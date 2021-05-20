@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">
+    <p>
+        Required Feilds are followed by *
+    </p>
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <p>Name * <input type="Text"required name="name"   ></p>
+    <p>
+        <fieldset>
+            <legend>Gender*</legend>
+        Male <input type="radio"name ="Gender" id="Male">
+        Female <input type="radio"name ="Gender" id="Female">
+    </fieldset>
+    </p>
+    <p>
+        <fieldset>
+            Address :<textarea name="address" id="address" cols="50" rows="8"></textarea>
+        </fieldset>
+    </p>
+    <p><fieldset>
+        Email * :<input id="email" required type="email">
+    </fieldset></p>
+    <p><fieldset>
+        <Pincode inputmode="number" id="number" ></Pincode>
+        Pincode* :<input type="number" id="Pincode">
+    </fieldset></p>
+    <p><fieldset>
+        Contact :<input type="number" id="Contact" required>
+    </fieldset></p>
+    <hr>
+    <h1>Payment Information</h1>
+    <p>
+        Card Type:  
+        <select name="card_type" id="card_type" required>
+        <option value="">--Select a card type--</option>
+        <option value="Visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="debit">debit</option>
+        <option value="G pay">G pay</option>
+    </select>
+</fieldset>
+    </p>
+    <p>
+        Card Number : <input type="number" name="Card Number" id="Card Number">
+    </p>
+<p>
+    Expiration Date  :<input type="date" name="exp_date" id="exp_date" required>
+</p>
+<p>
+    CVV : <input type="password" name="CVV" id="CVV" required>
+</p>
+<input type="button" value="Pay now">
+</form>
+</body>
+</html>
